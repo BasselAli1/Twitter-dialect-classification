@@ -17,7 +17,7 @@ In this project I used the [QADI](https://arxiv.org/pdf/2005.06557.pdf) dataset 
 There are 4 main types of files in this project
 * 4 `.py` scripts (Data fetching, Data pre-processing, Model Training and Deployment) with the final results/code
 * 2 Jupyter notebooks with detailed code of all the experiments that I did
-* The dataset before preprocessing (`dataset_with_tweets.csv`) and after preprocessing (`preprocessed_data.csv`)   
+* The dataset    
 * There are also the Flask App's files like HTML and CSS files
 
 ## Getting Started<a name="Getting"/>
