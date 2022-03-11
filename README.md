@@ -13,7 +13,7 @@
 
 ## Description<a name="Description"/>
 
-In this project I used the [QADI](https://arxiv.org/pdf/2005.06557.pdf) dataset to classify the different dialects of Arabic language. I used machine learning methods specifically logestic regression, linear SVM and naive bayes. I also tried to compare those methods with deep learning models namely LSTM and word embeddings. I did many my experiments locally on my machine.  
+In this project I used the [QADI](https://arxiv.org/pdf/2005.06557.pdf) dataset to classify the different dialects of Arabic language. I used machine learning methods specifically logestic regression, linear SVM and naive bayes. I also tried to compare those methods with deep learning models namely LSTM and word embeddings. I did many my experiments locally on my machine. I deployed my project using Flask  
 There are 4 main types of files in this project
 * 4 `.py` scripts (Data fetching, Data pre-processing, Model Training and app) with the final results/code
 * 2 Jupyter notebooks with detailed code of all the experiments that I did
