@@ -17,11 +17,8 @@ In this project I used the [QADI](https://arxiv.org/pdf/2005.06557.pdf) dataset 
 There are 4 main types of files in this project
 * 4 `.py` scripts (Data fetching, Data pre-processing, Model Training and Deployment) with the final results/code
 * 2 Jupyter notebooks with detailed code of all the experiments that I did
-* 2 pre-trained word embedding files that I downloaded
-1. [Mazajak](http://mazajak.inf.ed.ac.uk:8000/) specifically the CBOW words that were trained on 100M tweets
-2. [AraVec](https://github.com/bakrianoo/aravec) specifically the Unigrams CBOW Models with vector size of 100
 * The dataset before preprocessing (`dataset_with_tweets.csv`) and after preprocessing (`preprocessed_data.csv`)   
-Threre are also the Flask App's files like HTML and CSS files
+* There are also the Flask App's files like HTML and CSS files
 
 ## Getting Started<a name="Getting"/>
 ### Dependencies<a name="Dependencies"/>
@@ -41,6 +38,9 @@ conda create -n tf tensorflow
 conda activate tf
 ```
 * you can install the dependencies yourself or run the `dependencies.bat` file from the anaconda command-line
+* in order to train the models that require pretrained word embedding you need to download word embedding from 
+1. [Mazajak](http://mazajak.inf.ed.ac.uk:8000/) specifically the CBOW words that were trained on 100M tweets
+2. [AraVec](https://github.com/bakrianoo/aravec) specifically the Unigrams CBOW Models with vector size of 100
 
 ### Executing program<a name="Executing"/>
 
