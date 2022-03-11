@@ -25,7 +25,7 @@ There are 4 main types of files in this project
 * Anaconda is a must
 * tensorflow
 * flask
-* farasapy
+* farasapy (you need to install jave in order to work)
 * PyArabic
 * gensim
 
@@ -37,7 +37,16 @@ There are 4 main types of files in this project
 conda create -n tf tensorflow
 conda activate tf
 ```
-* you can install the dependencies yourself or run the `dependencies.bat` file from the anaconda command-line
+* you need to install the dependencies
+```
+conda install pandas
+conda install scikit-learn 
+conda install -c anaconda flask
+conda install -c anaconda gensim
+conda install tensorflow
+pip install farasapy
+pip install PyArabic
+```
 * in order to train the models that require pretrained word embedding you need to download word embedding from 
 1. [Mazajak](http://mazajak.inf.ed.ac.uk:8000/) specifically the CBOW words that were trained on 100M tweets
 2. [AraVec](https://github.com/bakrianoo/aravec) specifically the Unigrams CBOW Models with vector size of 100
