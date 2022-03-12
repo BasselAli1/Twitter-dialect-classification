@@ -62,7 +62,7 @@ pip install PyArabic
 | Model name        | Accuracy           | F1 score  |
 | ------------- |:-------------:| -----:|
 | Embedding layer without lstm from scratch      | 0.523 | 0.494 |
-| LSTM from scratch      | centered      |   0.455 | 0.399
+| LSTM from scratch      | 0.455      | 0.399   | 
 | Embedding layer with finetuned AraVec | 0.524      |    0.493 |
 | Embedding layer with finetuned Mazajak | 0.526      |    0.497 |
 | LSTM with fixed pretrained embedding Mazajak | 0.313      |    0.181 |
@@ -71,14 +71,14 @@ pip install PyArabic
 
 | Model name        | Accuracy           | F1 score  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
+| uni-gram      | 0.512 | 0.478 |
+| two-gram SVM      | 0.538      |   0.507 |
 * comparison of the deep learning and machine learning on the test set
 
 | Model name        | Accuracy           | F1 score  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
+| two gram SVM      | 0.5388 | 0.5072 |
+| Embedding layer with finetuned Mazajak      | 0.5288      |   0.5024 |
 
 ## Author<a name="Author"/>
 name: Bassel Ali Mahmoud   
