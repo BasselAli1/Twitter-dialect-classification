@@ -57,7 +57,7 @@ pip install PyArabic
 * if you're intersted you can open the jupyter notebook for full detailed code/experiments 
 
 ## Results<a name="Results"/>
-* ##### Results of deep learning on the validation set
+* **Results of deep learning on the validation set**
 
 | Model name        | Accuracy           | F1 score  |
 | ------------- |:-------------:| -----:|
@@ -67,13 +67,13 @@ pip install PyArabic
 | Embedding layer with finetuned Mazajak | 0.526      |    0.497 |
 | LSTM with fixed pretrained embedding Mazajak | 0.313      |    0.181 |
 | LSTM with fixed pretrained embedding AraVec | 0.125      |    0.012 |
-* ##### results of the machine learning models on the validation set
+* **results of the machine learning models on the validation set**
 
 | Model name        | Accuracy           | F1 score  |
 | ------------- |:-------------:| -----:|
 | uni-gram      | 0.512 | 0.478 |
 | two-gram SVM      | 0.538      |   0.507 |
-* ##### comparison of the deep learning and machine learning on the test set
+* **comparison of the deep learning and machine learning on the test set**
 
 | Model name        | Accuracy           | F1 score  |
 | ------------- |:-------------:| -----:|
