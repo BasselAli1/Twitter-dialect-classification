@@ -22,7 +22,7 @@ There are 4 main files in this project
 * The dataset    
 * There are also the Flask App's files like HTML and CSS files
 * there is also a `dicts.py` file which is there just to help in predicting during Flask deployment. it contains a processing function to process the user's input text
-
+* a picture of the final deep learning model
 ## Getting Started<a name="Getting"/>
 ### Dependencies<a name="Dependencies"/>
 * Anaconda is a must
