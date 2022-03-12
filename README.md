@@ -22,6 +22,7 @@ There are 4 main files in this project
 * a `dicts.py` file which is there just to help in predicting during Flask deployment. it contains a processing function to process the user's input text    
 * a picture `final model.png` of the final deep learning model
 * the Flask App's files like HTML and CSS files
+* a presentation file `Tweeter dialect classification.pptx`
 * The dataset
 ## Getting Started<a name="Getting"/>
 ### Dependencies<a name="Dependencies"/>
