@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 URL = 'https://recruitment.aimtechnologies.co/ai-tasks'
 df = pd.read_csv('dialect_dataset.csv', dtype=str)
