@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, flash
 from joblib import load
 from dicts import outputs, country_codes
-import  dicts
+import dicts
 
 
 pipeline = load("two_gram_svm.joblib")
