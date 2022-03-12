@@ -14,11 +14,14 @@
 ## Description<a name="Description"/>
 
 In this project I used the [QADI](https://arxiv.org/pdf/2005.06557.pdf) dataset to classify the different dialects of Arabic language. I used machine learning methods specifically logestic regression, linear SVM and naive bayes. I also tried to compare those methods with deep learning models namely LSTM and word embeddings. I did many my experiments locally on my machine. I deployed my project using Flask  
-There are 4 main types of files in this project
-* 4 `.py` scripts (`Data_fetching.py`, `Data_pre_processing.py`, `Model_training.py` and `app.py`) with the final results/code
+There are 4 main files in this project
+* 4 `.py` scripts (`Data_fetching.py`, `Data_pre_processing.py`, `Model_training.py` and `app.py`) with the final results/code     
+
+**There are also**    
 * 2 Jupyter notebooks with detailed code of all the experiments that I did
 * The dataset    
 * There are also the Flask App's files like HTML and CSS files
+* there is also a `dicts.py` file which is there just to help in predicting during Flask deployment. it contains a processing function to process the user's input text
 
 ## Getting Started<a name="Getting"/>
 ### Dependencies<a name="Dependencies"/>
@@ -53,7 +56,7 @@ pip install PyArabic
 
 ### Executing program<a name="Executing"/>
 
-* you need to run `.py` scripts in order in the command line. 
+* you need to run `.py` scripts **in the right order** in the command line. 
 * if you're intersted you can open the jupyter notebook for full detailed code/experiments 
 
 ## Results<a name="Results"/>
