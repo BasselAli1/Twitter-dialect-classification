@@ -56,7 +56,7 @@ pip install PyArabic
 
 ### Executing program<a name="Executing"/>
 
-* you need to run `.py` scripts **in order** in the command line. 
+* you need to run `.py` scripts **in the right order** in the command line. 
 * if you're intersted you can open the jupyter notebook for full detailed code/experiments 
 
 ## Results<a name="Results"/>
