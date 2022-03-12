@@ -17,7 +17,7 @@ In this project I used the [QADI](https://arxiv.org/pdf/2005.06557.pdf) dataset 
 There are 4 main files in this project
 * 4 `.py` scripts (`Data_fetching.py`, `Data_pre_processing.py`, `Model_training.py` and `app.py`) with the final results/code     
 
-There are also    
+**There are also**    
 * 2 Jupyter notebooks with detailed code of all the experiments that I did
 * The dataset    
 * There are also the Flask App's files like HTML and CSS files
