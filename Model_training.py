@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing.text import Tokenizer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -36,6 +35,9 @@ import joblib
 
 
 dataset = pd.read_csv("preprocessed_data.csv")
+
+# removing one bad data point where the entire tweet is english
+dataset = dataset.drop(dataset['tweet'][dataset['pure_tweet'].isnull()].index)
 
 dataset['dialect_number'] = dataset['dialect'].factorize()[0]
 outputs = dict(zip(dataset['dialect_number'], dataset['dialect']))
