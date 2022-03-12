@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import requests
+import time
 
 URL = 'https://recruitment.aimtechnologies.co/ai-tasks'
 df = pd.read_csv('dialect_dataset.csv', dtype=str)
@@ -13,7 +14,11 @@ for batch in range(batches+1):
     #print("===========================")
     ids = np.array(df['id'][size*batch:size*batch+size]).tolist()
     data_id.extend(ids)
-    req = requests.post(URL, json= ids)
+    try:
+        req = requests.post(URL, json= ids)
+    except:
+        time.sleep(60)
+        req = requests.post(URL, json= ids)
     data_tweets.extend(req.json().values())
 
 ids = np.array(df['id'][size*(batch+1):]).tolist()
