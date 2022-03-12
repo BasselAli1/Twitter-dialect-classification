@@ -19,6 +19,7 @@ There are 4 main types of files in this project
 * 2 Jupyter notebooks with detailed code of all the experiments that I did
 * The dataset    
 * There are also the Flask App's files like HTML and CSS files
+* there is also a `dicts.py` file which it just there to help in predicting in the flask app
 
 ## Getting Started<a name="Getting"/>
 ### Dependencies<a name="Dependencies"/>
