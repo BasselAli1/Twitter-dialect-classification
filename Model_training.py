@@ -108,6 +108,7 @@ two_gram_svm = Pipeline([
     ('clf', LinearSVC()),
 ])
 two_gram_svm.fit(X_train['pure_tweet'], y_train)
+joblib.dump(two_gram_svm, filename= 'two_gram_svm.joblib')
 
 # print the results on the test data
 print("Machine learning results")
