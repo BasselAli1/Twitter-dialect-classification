@@ -20,4 +20,4 @@ req = requests.post(URL, json= ids)
 data_tweets.extend(req.json().values())
 dataset = pd.DataFrame({'dialect': df['dialect'], 'tweet': data_tweets})
 
-dataset.to_csv('dataset.csv', index=False)
+dataset.to_csv('dataset_with_tweets.csv', index=False)
