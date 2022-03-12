@@ -53,7 +53,7 @@ pip install PyArabic
 
 ### Executing program<a name="Executing"/>
 
-* you can simply run any `.py` script in the command line
+* you need to run `.py` scripts in order in the command line. 
 * if you're intersted you can open the jupyter notebook for full detailed code/experiments 
 
 ## Results<a name="Results"/>

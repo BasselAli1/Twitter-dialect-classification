@@ -64,8 +64,9 @@ def preprocess(text):
     text = lemmatization(text)
     return text
 # read the data from phase 1
-dataset = pd.read_csv('dataset.csv', dtype=str)
-dataset['pure_tweet'] = dataset['tweets'].apply(lambda x: preprocess(x))
+dataset = pd.read_csv('dataset_with_tweets.csv', dtype=str)
+
+dataset['pure_tweet'] = dataset['tweet'].apply(lambda x: preprocess(x))
 # save data for phase 2
 dataset.to_csv('preprocessed_data.csv', index=False)
 stemmer_interactive.terminate()
