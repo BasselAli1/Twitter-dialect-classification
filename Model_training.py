@@ -32,6 +32,7 @@ import gensim
 from collections import Counter
 from sklearn.metrics import f1_score
 from sklearn.feature_extraction.text import TfidfVectorizer
+import joblib
 
 
 dataset = pd.read_csv("preprocessed_data.csv")
