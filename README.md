@@ -48,6 +48,7 @@ conda install scikit-learn
 conda install -c anaconda flask
 conda install -c anaconda gensim
 conda install tensorflow
+conda install -c conda-forge matplotlib
 pip install farasapy
 pip install PyArabic
 ```
