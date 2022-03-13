@@ -61,6 +61,7 @@ pip install PyArabic
 
 * you need to run `.py` scripts **in the right order** in the command line. 
 * if you're intersted you can open the jupyter notebook for full detailed code/experiments 
+* type `flask run` in the command line to run the flask app in your browser
 
 ## Results<a name="Results"/>
 * **Results of deep learning on the validation set**
