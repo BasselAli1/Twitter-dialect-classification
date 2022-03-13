@@ -29,7 +29,7 @@ There are 4 main files in this project
 * Anaconda is a must
 * tensorflow
 * flask
-* farasapy (you need to install jave in order to work)
+* farasapy (you need to install java in order to work)
 * PyArabic
 * gensim
 
@@ -53,6 +53,7 @@ pip install PyArabic
 ```
 * if you faced any problem trying to use jupyter with this message "'jupyter' is not recognized as an internal or external command", install jupyter   
 `pip install notebook`  
+* please install java for `farasapy` to work
 * in order to train the models that require pretrained word embedding you need to download word embedding from 
 1. [Mazajak](http://mazajak.inf.ed.ac.uk:8000/) specifically the CBOW words that were trained on 100M tweets **(this is required to run`Model_training.py`)**
 2. [AraVec](https://github.com/bakrianoo/aravec) specifically the Unigrams CBOW Models with vector size of 100
@@ -61,6 +62,7 @@ pip install PyArabic
 
 * you need to run `.py` scripts **in the right order** in the command line. 
 * if you're intersted you can open the jupyter notebook for full detailed code/experiments 
+* type `flask run` in the command line to run the flask app in your browser
 
 ## Results<a name="Results"/>
 * **Results of deep learning on the validation set**
