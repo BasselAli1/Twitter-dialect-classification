@@ -29,7 +29,7 @@ There are 4 main files in this project
 * Anaconda is a must
 * tensorflow
 * flask
-* farasapy (you need to install jave in order to work)
+* farasapy (you need to install java in order to work)
 * PyArabic
 * gensim
 
