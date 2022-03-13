@@ -43,9 +43,8 @@ dataset['dialect_number'] = dataset['dialect'].factorize()[0]
 outputs = dict(zip(dataset['dialect_number'], dataset['dialect']))
 
 # splitting the data into training, validation test
-# stratify to solve class imbalance
-X_train, X_other, y_train, y_other = train_test_split(dataset, dataset['dialect_number'],test_size = 0.2, random_state =0, stratify =dataset['dialect_number'])
-X_val, X_test, y_val, y_test = train_test_split(X_other, y_other,test_size = 0.5, random_state =0, stratify =y_other)
+X_train, X_other, y_train, y_other = train_test_split(dataset, dataset['dialect_number'],test_size = 0.2, random_state =0)
+X_val, X_test, y_val, y_test = train_test_split(X_other, y_other,test_size = 0.5, random_state =0)
 
 # deep learning
 #==============
