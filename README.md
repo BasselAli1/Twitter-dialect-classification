@@ -51,6 +51,8 @@ conda install tensorflow
 pip install farasapy
 pip install PyArabic
 ```
+* if you faced any problem trying to use jupyter with this message "'jupyter' is not recognized as an internal or external command", install jupyter
+`pip install notebook`  
 * in order to train the models that require pretrained word embedding you need to download word embedding from 
 1. [Mazajak](http://mazajak.inf.ed.ac.uk:8000/) specifically the CBOW words that were trained on 100M tweets
 2. [AraVec](https://github.com/bakrianoo/aravec) specifically the Unigrams CBOW Models with vector size of 100
