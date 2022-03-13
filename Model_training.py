@@ -65,6 +65,7 @@ val_padded_sequence = pad_sequences(val_tweets, maxlen=60)
 # vocabulary size
 vocab_size = len(tokenizer.word_index)+1
 
+# please download the word embeddings from (http://mazajak.inf.ed.ac.uk:8000/)
 # Loading the Mazajak Pretrained word embedding
 embeddings_Mazajak = gensim.models.KeyedVectors.load_word2vec_format('cbow_100.bin',binary=True,unicode_errors='ignore')
 
