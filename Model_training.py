@@ -115,7 +115,7 @@ print('accuracy: ', np.mean(list(map(np.argmax,test_pred))==y_test),' ||F1 score
 #=================
 two_gram_svm = Pipeline([
     ('tfidf',TfidfVectorizer(ngram_range=(1,2))),
-    ('clf', LinearSVC()),
+    ('clf', LinearSVC(class_weight='balanced')),
 ])
 two_gram_svm.fit(X_train['pure_tweet'], y_train)
 joblib.dump(two_gram_svm, filename= 'two_gram_svm.joblib')
