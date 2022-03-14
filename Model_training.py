@@ -84,7 +84,7 @@ for word, i in tokenizer.word_index.items():
 class_weights = list(class_weight.compute_class_weight(class_weight ='balanced',
                                              classes =np.unique(y_train),
                                              y = y_train))
-class_weights = dict(zip(np.unique(y_train), class_weights))[0]
+class_weights = dict(zip(np.unique(y_train), class_weights))
 # Building the model
 embedding_vector_length = 300
 model_finetune_mazajak = Sequential()
