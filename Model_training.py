@@ -78,7 +78,11 @@ for word, i in tokenizer.word_index.items():
             embedding_matrix_Mazajak[i] = embedding_vector
     except:
         continue
-
+# give weights to the small classes to prevent class imbalance
+class_weights = list(class_weight.compute_class_weight(class_weight ='balanced',
+                                             classes =np.unique(y_train),
+                                             y = y_train))
+class_weights = dict(zip(np.unique(y_train), class_weights))[0]
 # Building the model
 embedding_vector_length = 300
 model_finetune_mazajak = Sequential()
@@ -94,7 +98,7 @@ es = EarlyStopping(monitor='val_loss', verbose=1, patience=2, min_delta= .1)
 
 # traing the model
 history_finetune_mazajak = model_finetune_mazajak.fit(padded_sequence,y, validation_data=(val_padded_sequence, y_val_categorical),
-                                               epochs=10, batch_size=32, callbacks=[es, mc])
+                                               epochs=10, batch_size=32, callbacks=[es, mc], class_weight=class_weights)
 
 # tokenize the test data and padding
 test_tweets = tokenizer.texts_to_sequences(X_test['pure_tweet'])
