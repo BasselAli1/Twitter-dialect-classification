@@ -80,8 +80,8 @@ pip install PyArabic
 
 | Model name        | Accuracy           | F1 score  |
 | ------------- |:-------------:| -----:|
-| uni-gram      | 0.512 | 0.478 |
-| two-gram SVM      | 0.538      |   0.507 |
+| uni-gram(Tf-idf) SVM     | 0.512 | 0.478 |
+| two-gram(Tf-idf) SVM      | 0.538      |   0.507 |
 * **comparison of the deep learning and machine learning on the test set**
 
 | Model name        | Accuracy           | F1 score  |
